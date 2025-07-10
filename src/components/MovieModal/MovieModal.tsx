@@ -8,7 +8,7 @@ interface MovieModalProps {
   onClose: () => void;
 }
 
-export function MovieModal({ movie, onClose }: MovieModalProps) {
+export default function MovieModal({ movie, onClose }: MovieModalProps) {
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
